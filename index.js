@@ -12,7 +12,7 @@ function increaseRankBy(n)
   var lists = document.getElementsByClassName('.ranked-list');
   for(let i = 0; i < lists.length; i++)
   {
-    parseInt(lists[i]);
+    parseInt(lists[i].innerHTML);
     lists[i] = lists[i] + n;
   }
 }
