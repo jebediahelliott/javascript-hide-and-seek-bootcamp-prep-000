@@ -19,10 +19,10 @@ function increaseRankBy(n)
 function deepestChild()
 {
   let finder = document.getElementById('grand-node');
-  var element;
+  var element = [];
   for(let i = 0; i < finder.length; i++)
   {
-    if(
+    while(finder)
     {
       return finder[i];
     }
