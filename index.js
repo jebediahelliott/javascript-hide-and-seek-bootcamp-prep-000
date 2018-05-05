@@ -24,6 +24,7 @@ function deepestChild()
   {
     while(finder)
     {
+      if(finder.querySelector('div') === undefined)
       return finder[i];
     }
   }
