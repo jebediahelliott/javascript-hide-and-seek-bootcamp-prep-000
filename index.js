@@ -18,5 +18,12 @@ function increaseRankBy(n)
 }
 function deepestChild()
 {
-  
+  const finder = getElementById('grand-node').querySelectorAll('div');
+  for(let i = 0; i < finder.length; i++)
+  {
+    if(finder[i].querySelector('div') === undefined)
+    {
+      return finder[i];
+    }
+  }
 }
